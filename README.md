@@ -12,3 +12,5 @@
 <p align="center">
   <a href=""></a>
 </p>
+
+[MIT License](LICENSE)
