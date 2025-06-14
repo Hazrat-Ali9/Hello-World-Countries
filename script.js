@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const greetingElement = document.getElementById('greeting');
   const changeButton = document.getElementById('changeButton');
   const body = document.body;
-
+// Script js
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
   const greetings = [
