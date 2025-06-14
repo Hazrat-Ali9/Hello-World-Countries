@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #3498db, #6ab1f7, #95c8f7, #b3d6f7, #d1e4f7);
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+#greeting-container {
+  text-align: center;
+}
+
+#greeting {
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#changeButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-top: 100px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#changeButton:hover {
+  background-color: #2980b9;
+}
+
+.falling-letter {
+  position: absolute;
+  top: -20px;
+  color: #000;
+  font-size: 1em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 9999;
+  opacity: 0.7;
+  animation: fallAnimation linear infinite;
+}
+
+@keyframes fallAnimation {
+  to {
+    transform: translateY(calc(100vh + 20px));
+  }
+}
